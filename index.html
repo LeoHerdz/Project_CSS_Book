@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+      background-color: rgb(9, 179, 252);
+    }
+    .container {
+      display: flex;
+      text-align: center;
+      font-size: 24px;
+      margin: 40px auto;
+      padding: 20px;
+      justify-content: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .items {
+      width: 400px;
+      height: 400px;
+      padding: 20px;
+      background-color: rgb(19, 118, 223);
+      color: #ffffff;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 5px 5px 10px black;
+    }
+    .readbox {
+      padding: 10px;
+      border: 1px solid #d4d4d4;
+      margin: 15px 0;
+      background: linear-gradient(to left, rgb(85, 168, 85), #0cda0c);
+      border-radius: 8px;
+      color: #ffffff;
+
+      text-align: center;
+    }
+    #right {
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      width: 400px;
+      height: 400px;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 5px 5px 10px black;
+    }
+    .read {
+      padding: 20px;
+      border: 1px solid #d4d4d4;
+      margin: 15px 0;
+      background: #da5e0c;
+      border-radius: 8px;
+      color: #ffffff;
+      text-align: center;
+    }
+    #emoji {
+      background-color: #fba063;
+      text-align: center;
+      border-radius: 100px;
+      width: 40px;
+      height: 40px;
+    }
+    #visit {
+      text-shadow: 5px 5px 10px gray;
+    }
+  </style>
+  <body>
+    <!--Left Side-->
+    <section class="container">
+      <div class="items">
+        <h2>BookCorner</h2>
+        <p>Your Reading Haven</p>
+        <p id="emoji">📚</p>
+      </div>
+      <!--Right Side-->
+      <section id="right">
+        <h2>Our Services</h2>
+        <!--Readbox = Green boxes-->
+        <div class="readbox">
+          <h4>New and Used Books</h4>
+        </div>
+
+        <div class="readbox">
+          <h4>Reading Cafe</h4>
+        </div>
+        <div class="readbox">
+          <h4>Book Club Events</h4>
+        </div>
+        <!--Read = orange box-->
+        <div class="read">
+          <h4 id="Visit"><strong>Visit Our Store</strong></h4>
+          <p>456 Library Avenue</p>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
